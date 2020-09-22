@@ -1,0 +1,24 @@
+{
+  "name": "training-travel-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peanut-88/training-travel-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peanut-88/training-travel-site/issues"
+  },
+  "homepage": "https://github.com/Peanut-88/training-travel-site#readme",
+  "dependencies": {
+    "loadash": "^1.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}
