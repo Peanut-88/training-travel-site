@@ -1,0 +1,66 @@
+.large-hero {
+    border-bottom: 10px solid $mainBlue;
+    position: relative;
+
+    &__image {
+        display: block;
+    }
+
+    &__text-content {
+        /* positionner le contenu sur le text */
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    
+        /* centrer le texte verticalement */
+        width: 100%;
+        text-align: center;
+    
+        /* centrer le texte horizontalement 
+            On pousse vers le haut l'élément de 50% de sa hauteur
+        */
+        top: 50%;
+        transform: translateY(-50%) 
+    }
+    
+    &__title {
+        font-weight: 300;
+        color: $mainBlue;
+        margin: 0;
+        font-size: 2.4rem;
+        /*
+        @media(min-width: 530px) {
+            font-size: 4.8rem;
+        }*/
+
+        @mixin atSmall {
+            font-size: 4.8rem;
+        }
+    }
+    
+    &__subtitle {
+        font-weight: 300;
+        color: $mainBlue;
+        font-size: 1.5rem;
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 2.9rem;
+        }
+    }
+
+    &__description {
+        color: #FFF;
+        font-size: 1.1rem;
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atSmall {
+            font-size: 1.875rem;
+        }
+    }
+}
+
