@@ -8,6 +8,7 @@
 
     &__text-content {
         /* positionner le contenu sur le text */
+        padding-top: 16px;
         position: absolute;
         top: 0;
         bottom: 0;
