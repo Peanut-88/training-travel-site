@@ -1,3 +1,8 @@
+html {
+    /* Quand on click sur un lien du menu on veut aller vers l'ancre avec un effet lent */
+    scroll-behavior: smooth; 
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
