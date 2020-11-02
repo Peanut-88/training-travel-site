@@ -7,7 +7,7 @@ exports.handler = function(event, context, callback) {
     let body
 
     if(event.body ) { // si le body existe je parse le json
-        body = JSON.parse(envent.body) 
+        body = JSON.parse(event.body) 
     } else {
         body = {}
     }
