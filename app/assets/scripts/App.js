@@ -5,7 +5,9 @@ import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
 //import Modal from './modules/Modal'
+import ClientArea from './modules/ClientArea'
 
+new ClientArea();
 //new Modal();
 let stickyHeader = new StickyHeader();
 //let revealOnScroll = new RevealOnScroll()
