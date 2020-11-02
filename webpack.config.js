@@ -29,7 +29,8 @@ const postCSSPlugin = [
 class RunAfterCompile {
     apply(compiler) {
         compiler.hooks.done.tap('Copy images', function() {
-            fse.copySync('./app/assets/images', './docs/assets/images')
+            /* fse.copySync('./app/assets/images', './dist/assets/images') */
+            fse.copySync('./app/assets/images', './docs/assets/images') /* remplacer dist par docs pour github */
         })
     }
 }
@@ -101,7 +102,8 @@ if (currentTask == "build") {
         /*filename: 'bundle.js',*/
         filename: '[name].[chunkhash].js',
         chunkFilename: '[name].[chunkhash].js',
-        path: path.resolve(__dirname, 'docs')
+        /* path: path.resolve(__dirname, 'dist') */
+        path: path.resolve(__dirname, 'docs') /* remplacer dist par docs pour github */
     }
     config.mode = 'production'
     
